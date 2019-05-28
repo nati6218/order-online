@@ -1,0 +1,23 @@
+body{
+padding: 10px;
+}
+
+form{
+  margin: 10px;
+}
+#receipt{
+  display: none;
+}
+
+button{
+  position: relative;
+}
+.name{
+  text-decoration: underline;
+}
+.address{
+  text-decoration: underline;
+}
+.state {
+  text-decoration: underline;
+}
