@@ -1,15 +1,13 @@
 $(document).ready(function(){
   $('#order form').submit(function(event){
+    var objects = ["name", "address", "state"];
 
-  var nameInput = $('input#name').val();
-  var addressInput = $('input#address').val();
-  var stateInput = $('input#state').val();
-
-$('.name').text(nameInput);
-$('.address').text(addressInput);
-$('.state').text(stateInput);
+    objects.forEach(function(object) {
+      var userInput = $("input#"+ object).val();
+      $("." + object).text(userInput);
+    });
 
 $('#receipt').show();
 event.preventDefault();
-});
+  });
 });
